@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador MIPS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header >
+        <h1><a href="./index.html">Simulador MIPS</a></h1>
+        <nav id="nav-bar">
+            <ul>
+                <li class="menu-item"><a href="./index.html">Simulador</a></li>
+                <li class="menu-item"><a href="./sobre.html">Sobre</a></li>
+                <li class="menu-item" id="inserir-codigo">Inserir Código</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="table-container">
+            <table class="tab-diagrama" id="diagrama">
+                <tr id="tab-cabecalho"></tr>
+
+                
+            </table>
+        </div>
+
+        <div class="sidebar">
+            <button class="prox-instrucao" onclick="passaCiclo()">
+                <i class="fa fa-arrow-right"></i>
+            </button>
+            <table class="banco" id="banco-reg"></table>
+            <table class="banco" id="memoria"></table>
+        </div>
+        
+        <!-- Entrada de codigo -->
+        <div class="inserir-container">
+            <div class="stalls">
+                <label for="">gerar stalls</label>
+                <div class="stalls-inputs">
+                    <input type="radio" name="stalls" value="sim"><label for="">sim</label>
+                    <input type="radio" name="stalls" value="nao" checked><label for="">não</label>
+                </div>
+                
+            </div>
+            <textarea name="codigo" id="codigo" cols="30" rows="10" placeholder="Insira o código aqui..."></textarea>
+            <button id="submit" class="btn" onclick="submit()">Executar</button>
+            <button id="exit" class="btn" onclick="fecharInserir()">Sair</button>
+        </div>
+
+    </main>
+</body>
+</html>
