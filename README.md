@@ -6,10 +6,4 @@ A interface mostra, a cada estágio do pipeline, qual instrução está rodando 
 
 O simulador possui suporte para as seguintes instruções: add, addi, and, beq, bne, j, jal, jr, lw, or, sll, srl, sw e sub
 
-Código para teste rápido:
-
-addi $a0, $zero, 10\n
-addi $a1, $a0, 10\n
-sw $a0, 20($a1)\n
-sub $a2, $a1, $a0\n
-lw $a3, 20($a1)\n
+No repositório tem um arquivo .asm que pode ser usado para testar o simulador
