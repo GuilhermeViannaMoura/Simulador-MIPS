@@ -8,8 +8,8 @@ O simulador possui suporte para as seguintes instruções: add, addi, and, beq, 
 
 Código para teste rápido:
 
-addi $a0, $zero, 10
-addi $a1, $a0, 10
-sw $a0, 20($a1)
-sub $a2, $a1, $a0
-lw $a3, 20($a1)
+addi $a0, $zero, 10\n
+addi $a1, $a0, 10\n
+sw $a0, 20($a1)\n
+sub $a2, $a1, $a0\n
+lw $a3, 20($a1)\n
